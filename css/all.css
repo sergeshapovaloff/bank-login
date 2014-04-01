@@ -1,0 +1,191 @@
+body{
+	min-width:450px;
+	font:12px/15px Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #fff;
+	margin: 0;
+}
+textarea{resize:vertical;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after{
+	content:'';
+	content:none;
+}
+p{
+	margin: 0 0 20px;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img{
+	vertical-align:top;
+	border-style:none;
+	max-width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+	color:#36a2c1;
+}
+a:hover{
+	text-decoration:underline;
+}
+input,
+textarea,
+select{
+	font:100% Helvetica, Arial, sans-serif;
+	color:#666;
+	outline:none;
+}
+input::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+input:-ms-input-placeholder {
+	color: #666;
+}
+input::-webkit-input-placeholder {
+	color: #666;
+}
+input[type="submit"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner{
+	padding:0;
+	border:0;
+}
+input[type='password'],
+input[type='text']{
+	outline: none;
+	border: 1px solid #e3e3e3;
+	border: 1px solid rgba(153,153,153,0.28);
+	background: #fff;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	line-height: 18px;
+	width: 100%;
+	height: 42px;
+	padding: 12px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input[type='submit']{
+	background: #36a2c1;
+	border: none;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 18px;
+	height: 40px;
+	padding: 0 26px;
+}
+input[type='submit']:hover{
+	background: #2d7f96;
+}
+#wrapper{
+	width: 442px;
+	margin: 0 auto;
+}
+.login-box h1{
+	font-size: 18px;
+	line-height: 41px;
+	font-weight: normal;
+	margin: 0 0 20px 73px;
+}
+.login-box h1 strong{
+	font-weight: bold;
+	color: #2fa2c3;
+	font-size: 41px;
+}
+.login-box{
+	padding: 150px 0 0;
+}
+.login-form{
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	border: 1px solid rgba(153,153,153,0.33);
+	padding: 34px 73px 31px 71px;
+}
+.login-form input[type='password'],
+.login-form input[type='text']{
+	padding-left: 41px;
+}
+.login-form .row{
+	margin: 0 0 34px;
+	position: relative;
+}
+.login-form .btn-holder{
+	padding: 6px 0 8px;
+}
+.login-form p{
+	margin: 0;
+}
+.error-text{
+	display: none;
+	font-size: 11px;
+	line-height: 14px;
+	color: #ed1f24;
+	padding: 3px 0 0 3px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+.icon-password,
+.icon-user,
+.row.error:after,
+.row.success:after{
+	position: absolute;
+	left: 16px;
+	top: 14px;
+	width: 14px;
+	height: 13px;
+	background: url('../images/sprite.png') no-repeat;
+}
+.row.error:after,
+.row.success:after{
+	content: '';
+}
+.icon-password{
+	background-position: 0 -22px;
+	width: 12px;
+}
+.row.error:after,
+.row.success:after{
+	background-position: 0 -45px;
+	width: 10px;
+	height: 10px;
+	top: 16px;
+	left: 100%;
+	margin: 0 0 0 12px;
+	display: none;
+}
+.row.success:after,
+.icon-success{
+	background-position: 0 -67px;
+	width: 11px;
+	height: 11px;
+	top: 15px;
+}
+.row.error:after,
+.row.success:after,
+.login-form .row.error .error-text{
+	display: block;
+}
+.login-form .row.success input{
+	border-color: #048c48;
+}
